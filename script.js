@@ -9,3 +9,14 @@ function menuverschijnt(){
 }
 
 menuButton.addEventListener("click", menuverschijnt);
+
+
+
+
+var addTo = document.querySelector("#calender")
+
+function displayPhrase(){
+    document.querySelector("#calenderr").innerHTML = 'Added to calender!';
+}
+
+addTo.addEventListener("click", displayPhrase);
