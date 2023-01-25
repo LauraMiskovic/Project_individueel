@@ -265,12 +265,12 @@ main section:last-child h3 {
 }
 
 select {
-    appearance:none;
+    appearance: none!important;;
     outline:0;
     box-shadow:none;
     border:0!important;
-    background: #F0F0F0;
-    background-image: none;
+    background: #ffffff;
+    background-image: none!important;
     flex: 1;
     padding: 0 .5em;
     color:rgb(0, 0, 0);
@@ -298,11 +298,11 @@ select {
     padding: 0 1em;
     background: #DE625A;
     cursor:pointer;
-    pointer-events:none;
+    pointer-events:none!important;
     transition:.25s all ease;
  }
  .select:hover::after {
-    color: #ffffff;
+    color: #ffffff!important;
  }
 
 main section:last-child input {
@@ -455,7 +455,7 @@ margin: 20px 0 45px 0;
 footer {
     background-color: white;
     text-align: center;
-    padding: 20px;
+    padding: 16px;
     border-radius: 10px 10px 0 0;
     position: relative;
     margin-top: 55px;
