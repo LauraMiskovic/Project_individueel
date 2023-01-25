@@ -1,0 +1,490 @@
+@font-face {
+    font-family: TT Norms;
+    src: url("fonts/TTNorms-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: TT Norms Bold;
+    font-weight: bold;
+    src: url("fonts/TTNorms-Bold.otf") format("opentype");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+
+body {
+    background-color: white;
+    margin: 0 22px;
+    font-family: 'TT Norms';
+    background-image: linear-gradient(white, #de635af8);
+}
+
+body header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    margin: 0 5px 0 0;
+    padding: 10px 0 0 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.708);
+    border-radius: 0 0 10px 10px;
+    z-index: 999999999999;
+}
+
+body header img{
+    width: 75px;
+    height: auto;
+    padding: 10px 0 0 0;
+}
+
+
+button {
+    background: #F8E551;
+    padding: 4px 9px;
+    border-radius: 50%;
+    border: 3px solid black;
+  
+    cursor: pointer;
+  
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 10px;
+  }
+  
+  .bar1,
+  .bar2,
+  .bar3 {
+    background-color: #000000;
+  
+    width: 30px;
+    height: 5px;
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 5px;
+  }
+  
+  .change .bar1 {
+    background-color: black;
+  
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    background-color: black;
+
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+  header nav ul {
+    background-color: #feba26;
+    list-style-type: none;
+  
+    display: flex;
+    position: fixed;
+    right: 0;
+    top: 30px;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    opacity: 0;
+    transition: all 0.6s;
+    transition-delay: 0.1s;
+    transform: translateX(24em);
+    z-index: 99999999999;
+  }
+  
+  header nav ul.terug {
+    transform: translateX(0);
+    transition: 0.5s;
+  
+    opacity: 1;
+    display: block;
+  }
+  
+  header nav ul {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+  
+  header nav li {
+    margin: 20px 30px 20px 0;
+  
+    text-align: right;
+  }
+
+  header nav li:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  header nav li:first-child {
+    margin-top: -8px;
+  }
+  
+  ul a {
+    color: white;
+  
+    font-weight: 900;
+    font-size: 1.1em;
+    text-decoration: none;
+  }
+  
+  ul a:hover {
+    opacity: 0.6;
+    transition: 0.3s ease;
+  }
+
+
+  
+/* FIRST PAGE */
+h1 {
+    font-size: 15px;
+    font-family: 'TT Norms bold';
+    padding-right: 70px;
+}
+
+h2 {
+    font-family: 'TT Norms bold'; 
+}
+main section:first-of-type {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+main section:first-of-type p {
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.moreInfo  p{
+    line-height: 23px;
+}
+
+
+main section:first-of-type div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+main section:first-of-type div:nth-of-type(2){
+    margin-top: -30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+main section:first-of-type div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main section:first-of-type div div:nth-of-type(1) {
+    width: 227px;
+    height: 81px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+
+    position: absolute;
+    top: -40px;
+    z-index: 999999;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+main section:first-of-type div div:nth-of-type(1) h3,h2 {
+    text-align: left;
+    z-index: 999999999999;
+}
+
+main section:first-of-type div div:nth-of-type(1) #streep {
+    background-color: #E18D89;
+    height: 15px;
+    width: 90px;
+    position: absolute;
+    top: 41px;
+    left: 0;
+    border: none;
+    border-radius: 0;
+
+}
+
+
+main section:first-of-type div img{
+width: 375px;
+height: 188px;
+margin-left: -22px;
+}
+
+main section p {
+    font-size: 12px;
+    font-family: 'Helvetica Neue';
+    padding: 0 8px 0 8px;
+}
+
+
+main section h3:last-child {
+    font-family: "TT Norms Bold";
+}
+
+main section:last-child {
+    display: flex;
+    flex-direction: column;
+
+}
+main section:last-child div {
+    display: flex;
+    flex-direction: column;
+}
+
+main section:last-child h3 {
+    font-family: 'TT Norms Bold';
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+select {
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #F0F0F0;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:rgb(0, 0, 0);
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 50px;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 20px;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 1em;
+    background: #DE625A;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #ffffff;
+ }
+
+main section:last-child input {
+    padding: 7px 5px;
+    font-size: 16px;
+    background-color: #DE625A;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 12px;
+    width: 137px;
+    border-radius: 20px;
+    
+}
+
+/* SECOND PAGE */
+#nationality {
+    background-color: white;
+    font-family: 'TT Norms bold';
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 15px;
+
+    padding: 3px 2px 3px 2px;
+    margin: 80px;
+    margin-top: 34px;
+
+    position: absolute;
+}
+
+#nationality p{
+    padding: 8px;
+    color: #DE625A;
+}
+
+.maps section {
+    padding-top: 0px;
+    padding-bottom: 100px;
+    font-size: 16px;
+}
+.maps .plekken h2 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.maps .plekken .lele {
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 89px;
+    width: 100%;
+    background: #F0F0F0;
+    padding: 0px;
+
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.maps .plekken .lele> div {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+    width: 145px ;
+    padding: 0;
+}
+
+.maps .plekken .lele> div p:nth-of-type(1) {
+    color: #DE625A;
+    font-family: 'TT Norms Bold';
+    font-size: 17px;
+}
+
+.maps .plekken .lele p:nth-of-type(1){
+    font-family: 'TT Norms Bold';
+}
+
+.maps .plekken .lele:nth-of-type(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.maps .plekken .lele:last-of-type {
+    margin-top: 40px;
+    margin-bottom: 1000px;
+}
+
+.maps .plekken p {
+   margin: 0;
+   line-height: normal;
+   padding: 0;
+}
+
+.maps .plekken p:nth-child(2) {
+    font-size: 15px;
+ }
+
+
+
+/* INFO PAGE */
+#plein {
+    width: 375px;
+    height: auto;
+    margin-top: -10px;
+}
+
+.info section h3:last-of-type {
+    font-family: 'TT Norms Bold';
+    font-size: 21px;
+    color: #000000;
+}
+
+.info section h2 {
+    font-family: 'TT Norms Bold';
+    font-size: 19px;
+    color: #DE625A;
+}
+
+.info section:first-of-type >div:nth-of-type(2) .details{
+position: static;
+border: none;
+height: auto;
+padding-left: 0;
+margin: 20px 0 45px 0;
+}
+
+.info section:first-of-type >div:nth-of-type(2) .details h3 {
+    font-size: 15px;
+}
+
+.info section:first-of-type >div:nth-of-type(2) .details p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #323232;
+}
+
+.info section:first-of-type >div:nth-of-type(2) p {
+    margin-top: 5px;
+}
+
+
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin-top: 55px;
+}
+
+footer ul {
+position: absolute;
+}
+
+
+
+iframe {
+    width:330px;
+     height:548px;
+}
+
+.link {
+    position: relative;
+}
+
+.link #link {
+    position: absolute;
+    margin-right: 5px;
+    width: 335px;
+    height: 552px;
+    background-color: #00000000;
+    align-items: center;
+
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}

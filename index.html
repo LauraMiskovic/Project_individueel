@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=l.miskovic2004@gmail.com, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <title>Homepage</title>
+</head>
+
+
+<body>
+<header>
+    <a href="index.html"><img src="images/logo1.png" alt="Group Up logo"></a>
+    <h1>Home</h1>
+
+    <button  alt="Hamburger menu button">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </button>
+
+      <nav>
+        <ul>
+          <li><a id="homeAcive" href="index.html">Home</a></li>
+          <li><a href="maps.html">Info</a></li>
+          <li><a href="maps.html">Profile</a></li>
+          <li><a href="maps.html">Settings</a></li>
+        </ul>
+      </nav>
+
+</header>
+
+<main>
+    <section>
+
+        <div>
+           <div>
+            <div id="streep"></div>
+            <h3>Studying in</h3>
+            <h2>Amsterdam</h2>
+           </div>
+
+            <img src="images/homepage.jpg" alt="Image of the Amsterdam river and the pond">
+        </div>
+
+        <div class="moreInfo">
+            <p>It must be an exciting experience being a brand-new student in Amsterdam, it could be a bit overwhelming too. By Meeting others from your country, you can feel less overwhelmed and alone.</p>
+            <p>By selecting your country below, you get all the available meetings in Amsterdam with the same people as your nationality.</p>
+        </div>
+
+    </section>
+
+    <section>
+        <h3>Get started</h3>
+        <div>
+            <div class="select">
+                           <select name="Countries" id="country">
+                <option value="select a country">select a country</option>
+                <option value="Japan">Japan</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Turkey">Turkey</option>
+                <option value="France">France</option>
+                <option value="South Korea">South Korea</option>
+              </select> 
+            </div>
+
+            <input type="button" onclick="window.location.href='maps.html';" class="btn btn-warning btn-lg" value="start searching"/>
+              <!-- <input type="button" value="Start searching" > -->
+
+        </div>
+    </section>
+</main>
+<footer>
+    <ul>
+        <li class="fa fa-twitter"></li>
+        <li class="fa fa-facebook"></li>
+        <li class="fa fa-instagram"></li>
+        <li class="fa fa-snapchat"></li>  
+    </ul>
+
+
+    <small>&#169;Copyright</small>
+</footer>
+<script src="/script.js"></script>
 </body>
 </html>
